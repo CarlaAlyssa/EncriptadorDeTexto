@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo-principal">Encriptador de texto</h1>
+    </header>
+    <main>
+      <section class="texto">
+        <div class="texto-container">
+          <h2 class="titulo-secundario">Ingrese el texto a encriptar aquí</h2>
+          <textarea
+            class="texto-encriptar"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+          <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+          <button class="desencriptar" onclick="btnDesencriptar()">
+            Desencriptar
+          </button>
+          <p class="mensaje">Solo letras minúsculas y sin acento</p>
+        </div>
+        <div class="texto-container">
+          <h2 class="titulo-secundario">Texto encriptado</h2>
+          <textarea
+            class="texto-desencriptar"
+            placeholder="Aún no ha ingresado texto"
+          ></textarea>
+          <button class="copiar" onclick="btnCopiar()">Copiar</button>
+        </div>
+      </section>
+    </main>
+    <script src="/encriptador.js"></script>
+  </body>
+</html>
